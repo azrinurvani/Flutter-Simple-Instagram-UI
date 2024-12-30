@@ -70,6 +70,8 @@ class HomePage extends StatelessWidget {
               itemBuilder: (context, index) {
                 return BubbleStory(
                   name: users[index],
+                  isMe: index == 0 ? true : false,
+                  isLive: index == 1 ? true : false,
                 );
               },
             ),
