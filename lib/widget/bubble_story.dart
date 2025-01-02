@@ -19,6 +19,7 @@ class BubbleStory extends StatelessWidget {
           Stack(
             alignment: isLive ? Alignment.bottomCenter : Alignment.bottomRight,
             children: [
+              //Avatar Story
               CircleAvatar(
                 backgroundColor: isMe ? Colors.white : Colors.pink,
                 radius: 41,

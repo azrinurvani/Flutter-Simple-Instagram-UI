@@ -109,7 +109,7 @@ class UserPost extends StatelessWidget {
         ),
         //END of Section Liked by Users and Others
 
-        //Section Top Comment by User 
+        //Section Top Comment by User
         Padding(
           padding: const EdgeInsets.symmetric(
             horizontal: 16,
@@ -117,8 +117,8 @@ class UserPost extends StatelessWidget {
           child: RichText(
             text: TextSpan(
               style: TextStyle(
-                color: Colors.black,
-              ),
+                  // color: Colors.black,
+                  ),
               children: [
                 TextSpan(
                   text: 'anti_pelangi ',
@@ -145,8 +145,8 @@ class UserPost extends StatelessWidget {
           child: Text(
             'View all comments',
             style: TextStyle(
-              color: Colors.black54,
-            ),
+                // color: Colors.black54,
+                ),
           ),
         ),
         //END of Section View All Commments
