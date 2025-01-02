@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class UserPost extends StatelessWidget {
   const UserPost({super.key, required this.name});
@@ -72,11 +73,29 @@ class UserPost extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Icon(Icons.favorite_border),
+              SvgPicture.asset(
+                'assets/icons/ic_favorite.svg',
+                colorFilter: ColorFilter.mode(
+                  Colors.white,
+                  BlendMode.srcIn,
+                ),
+              ),
               SizedBox(width: 10),
-              Icon(Icons.chat_bubble_outline_outlined),
+              SvgPicture.asset(
+                'assets/icons/ic_comment.svg',
+                colorFilter: ColorFilter.mode(
+                  Colors.white,
+                  BlendMode.srcIn,
+                ),
+              ),
               SizedBox(width: 10),
-              Icon(Icons.send_outlined),
+              SvgPicture.asset(
+                'assets/icons/ic_send.svg',
+                colorFilter: ColorFilter.mode(
+                  Colors.white,
+                  BlendMode.srcIn,
+                ),
+              ),
             ],
           ),
         ),
